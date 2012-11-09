@@ -1,0 +1,56 @@
+html {
+  cursor: text;
+}
+
+.editbox {
+  margin: .4em;
+  padding: 0;
+  font-family: 'Droid Sans Mono', serif;
+  font-size: 14px;
+  color: #fff;
+  line-height: 170%;
+}
+
+.editbox p {
+  margin: 0;
+}
+
+span.xml-tagname {
+  color: #e6bc75;
+}
+
+span.xml-attribute {
+  color: #8F9D6A;
+}
+
+span.xml-punctuation {
+  color: #e6bc75;
+}
+
+span.xml-attname {
+  color: #e6bc75;
+}
+
+span.xml-comment {
+  color: #878787;
+}
+
+span.xml-cdata {
+  color: #8F9D6A;
+}
+
+span.xml-processing {
+  color: #999;
+}
+
+span.xml-entity {
+  color: #8F9D6A;
+}
+
+span.xml-error {
+ color: #ca0000; !important;
+}
+
+span.xml-text {
+  color: #fff;
+}

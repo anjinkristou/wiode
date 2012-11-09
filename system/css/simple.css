@@ -1,0 +1,38 @@
+/*
+ * This file is part of the WIODE Web IDE Application, developed and 
+ * distributed by Kent Safranski and the WIODE team.
+ * <http://www.wiode.org>
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+html { width: 100%; height: 100%; overflow-x: hidden; background: #1a1a1a; }
+.simple { width: 100%; height: 100%; overflow-x: hidden; background: #1a1a1a; }
+
+.simple #main { width: 100%; overflow-x: hidden; }
+
+.simple #sliders { margin: 0; padding: 0; }
+.simple #sliders li.panel { position: absolute; margin: 0; padding: 0; width: 100%; list-style: none; }
+
+.simple #file_manager { display: block; margin: 3px 0 0 0; padding: 0; }
+.simple #file_manager li { display: block; margin: 0; padding: 0; background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.26, rgb(20,20,20)), color-stop(0.63, rgb(46,46,46))); background-image: -moz-linear-gradient(center bottom, rgb(20,20,20) 26%, rgb(46,46,46) 63%);}
+.simple #file_manager li:hover, .simple #file_manager li:active { }
+.simple #file_manager li span { display: block; margin: 0; cursor: pointer; color: #fff; padding: 15px 15px 15px 35px; line-height: 100%; border-bottom: 1px solid #202020; background-position: 10px 13px;  }
+.simple #file_manager li span:hover, #file_manager li span.active { background-color: none; }
+
+.simple #editor { display: block; width: 100%; height: 100%; border: none; font-family: 'Droid Sans Mono', monospace; font-size: 14px; background: #1a1a1a; color: #fff; padding: 10px 0 0 10px; }
+
+.simple #wait { display: block; position: absolute; top: 50%; left: 50%; margin: -15px 0 0 -15px; width: 30px; height: 30px; background: #fff; }
+
+.simple #top_menu li { display: none; }

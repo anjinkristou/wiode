@@ -1,0 +1,133 @@
+WIODE v. 3.1.5
+
+WIODE Web IDE Changelog
+-----------------------------------------------------------------------------------------
+
+3.1.7 - December 10, 2011
+    # Fix to FTP issue on certain servers (intermittent conf issue)
+
+3.1.5 - December 7, 2011
+    # Minor CSS changes to handle some tab and positioning issues
+    # Fix for Webkit/Chrome bug (editor resize on paste)
+
+3.1.0 - December 5, 2011
+    # Added Plugin Engine
+
+3.0.5 - November 28, 2011
+    # Added scrolling feature when tabs overflow container
+
+3.0.0 - November 21, 2011
+    # Enhanced security - strict session requirements on all scripts
+    # Added API
+
+2.6.1 - November 15, 2011
+    # Upgraded to jQuery 1.7
+    # Revamped User Interface
+
+2.6.0 - November 13, 2011
+    # Rebuilt filemanager to load each node dynamically. MAJOR performance improvement (~90%)
+    # Added History component to log changes to files and allow for restoring from previous saves
+    # Fixed cross-project duplication issues, enhanced load performance on destination selector
+    # Misc. fixes to project management controllers
+    # Improvements to find and replace functions
+
+2.5.5 - November 4, 2011
+    # Modified file locking to show alert and tab notification icon but allow overrides
+    # Added user (project-level) access control and admin/user types
+    # Ability to set custom passwords
+    # Modified file_manager to use single sql and array instead of recursive sql function
+    # FTP Log no longer real-time (too much strain on browser)
+    # Misc security patches for SQL Injection vulnerabilities
+
+2.5.0 - October 17, 2011
+    # Rebuilt System Settings
+    # Added Line/Character box to editor
+    # Added single-click select to filemanager:
+        - Hot-Key: F2 - Calls Rename Dialog
+        - Hot-Ket: Del - Calls Delete File Dialog
+
+2.3.1 - October 10, 2011
+    # Added support for Zen Coding
+    # Enhancments to JavaScript events and user-interactions
+    # Created help dialog
+    # Created snippet library and insert system
+    # Installed color-picker module with selected-value recognition/modification
+
+2.2.5 - October 3, 2011
+    # FTP Process no longer waits 10-seconds before closing
+    # Hot-Key bindings for open, upload, gotoline, find, replace and print on current file added
+    # In-Application "View" with hotkey (CTRL/COMMAND + O)
+    # Quick save+upload (CTRL/COMMAND + U) on current file in editor
+    # Drag+Drop Tabs
+    # Draggable Windows
+    # Editor editor functions
+    # Escape key now closes any open modals
+    # Added code print capability
+    # Added tooltips
+
+
+2.1.5 - September 26, 2011
+    # Added ability to Download via FTP from remote host, logging, error-reporting, etc.
+    # Added automated installer
+
+2.0.5 - September 18, 2011
+    # Fixed session-check in auth.php
+    # Performance and behavior enhancements for duplicate/create copy procedure - All actions now DOM manips, no rescan required
+    # Create Copy dialog now has tree-view destination selector
+
+2.0.0 - September 12, 2011
+    # Developed Simple (Mobile) Interface
+    # All files were reviewed and modified to incorporate new simple interface as well as
+    # incorporate changes to improve efficiency and performance.
+    # It is highly suggested that this be treated as a complete rebuild.
+        
+1.7.0 - September 4, 2011
+    # Create object function no longer requires rescan of file tree, all actions applied via javascript (performance enhancement on large projects)
+    # Rename object function no longer requires rescan of file tree, all actions applied via javascript (performance enhancement on large projects)
+    # Delete object function no longer requires rescan of file tree, all actions applied via javascript (performance enhancement on large projects)
+    # Upload object(s) function no longer requires full rescan of file tree (performance enhancement on large projects)
+    # Create copy (duplicate) function no longer requires full rescan of file tree (performance enhancement on large projects)
+    # Ability to rescan at directory level, instead of just rescan entire project (performance enhancement on large projects)
+    # File-Manager context menu improvements - more logical order of items, auto-detect if FTP is configured for current project
+    # Create and Rename Object dialog now returns to form with error message on duplicate title warning
+    # Locked sessions to $root which allows multiple instances of WIODE to run on the same server
+    # Changelog now in descending order with latest changes at beginning of file
+    # "System" no displays currently installed version with link to WIODE download site
+    
+1.6.2 - August 28, 2011
+    # Added .htaccess, .tpl, .json, .ini, .conf support. New icon for .htaccess, .ini, .conf
+    # Tabs now fully clickable (not just span element) - THNX to 'tripollite'
+    # Fixed opening php tag to force always lowercase ?PHP [becomes] ?php
+    # Fixed HTML special characters (amp,nbsp,quot,apos,etc...) to now output correctly in editor.
+    # Disabled auto-rescan - was set to every 5 minutes but on larger projects caused lag and was (for the most part) unneccesary.
+    # Easily re-enabled if reuqired, just un-comment line 20  //setInterval("rescanProject()",300000);  on below file:
+    # Shortened all animations by 100ms - This was just to keep user interface transitions from 'getting in the way' of functionality
+    # Added versioning querystring to common.js and screen.css to push updates immediately on servers with far-future cache settings
+    # Added auto-identification of https vs http protocol
+    # Added auto-identification of port being utilized
+    # Added ACTIVE status to file corresponding to active tab
+        
+1.5.2 - July 14, 2011
+    # Fixed "Create Copy" overwrite issue
+    # Moved config.php to ROOT to allow simple upgrades of the /system folder.
+
+1.5.1 - July 6, 2011
+    # Fixed cookie / maintained login issue, System now maintains cookies/sessions for up
+      to 5-days unless 'logout' procedure called.
+
+1.5 - July 1, 2011
+    # Addition of "Create Copy" in context menu for files and folders:
+
+1.4 - June 28, 2011
+    # First stable release.
+
+
+
+
+
+
+    
+
+
+
+    

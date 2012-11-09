@@ -1,0 +1,7 @@
+{
+"name":"CSSTidy",
+"description":"CSS parser and optimiser",
+"win_width":700,
+"default":"default.php",
+"overlay":"false"
+}

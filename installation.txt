@@ -1,0 +1,42 @@
+WIODE System Installation
+-----------------------------------------------------------------------------------------
+
+1. Upload all files and folders to your server.
+
+2. Ensure write capabilities on the following:
+    /config.php
+    /backups
+    /workspace
+
+3. Create a MySQL database.
+
+4. In a web browser go to http://[PATH_TO_WIODE]
+   Follow the steps and input required information to complete the installation.
+
+5. When installation is done you will be able to log in with the following:
+    Login:     user
+    Password:  welcome
+
+6. Upon first login you will be prompted to create a project. Note that project names
+   must only contain letters, numbers, underscores, or hyphens.
+
+7. The system setup is complete, and if all steps were followed you should now have a
+   working IDE.
+
+
+
+Notes:
+-----------------------------------------------------------------------------------------
+
+   -In order to use the "Backup" function in projects your host must allow the PHP exec() 
+    command and have the ability to use the "tar" and "gzip" commands.
+    If you have issues with this or your host won't allow it, we suggest looking into the
+    PECL zip extension (and modifying /system/php/modules/project_actions.php "Backup" 
+    section).
+    
+   -If you install WIODE locally and try to access it through http://localhost/ you may get
+    an error regarding "Undefined Index". This is due to the fact that the session/cookie 
+    variables can cause problems on some browsers through the localhost.
+
+   -It is STRONGLY recommended that you remove the /system/install.php file after you
+    have succesfully installed the system.  
